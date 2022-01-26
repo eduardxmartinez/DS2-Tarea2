@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tarea 2</h1>
+    <h2>Encontrar un número entre 1 - 1000</h2>
+    <h3>código:</h3>
+    <p><br />
+        import java.util.Scanner;</p>
+    
+    <p><br />
+        public class adivina {<br />
+        &nbsp; &nbsp; public static void main(String[] args) {<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; Scanner sc = new Scanner(System.in);<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; int min = 0;<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; int max = 1000;<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; int n;<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; String r, m;<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(&quot;Piensa en un n&uacute;mero y lo adivinar&eacute;&quot;);<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; do {<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; n = (int)(Math.random()*(max-min) + min);<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(&quot;&iquest;T&uacute; n&uacute;mero es
+        &quot;+n+&quot;?&quot;);<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.print(&quot;Ingresa s/n: &quot;);<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; r = sc.next();<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(&quot;s&quot;.equals(r)) break;<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(&quot;&iquest;T&uacute; n&uacute;mero es mayor o
+        menor?&quot;);<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.print(&quot;Ingresa mayor / menor: &quot;);<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; m = sc.next();<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(&quot;&quot;);<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (&quot;mayor&quot;.equals(m)) min = n-1;<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (&quot;menor&quot;.equals(m)) max = n+1;<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; } while (&quot;n&quot;.equals(r));<br />
+        &nbsp; &nbsp; }<br />
+        }</p>
+
+    <h3>resultados:</h3>
+    <img src="./img1.png" alt="" srcset="">
+</body>
+</html>
